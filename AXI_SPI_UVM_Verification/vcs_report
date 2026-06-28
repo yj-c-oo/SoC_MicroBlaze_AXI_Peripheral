@@ -1,0 +1,1288 @@
+vcs -full64 -sverilog  -ntb_opts uvm-1.2  -timescale=1ns/1ps  -debug_access+all -kdb -lca +incdir+./tb +incdir+./rtl -cm line+cond+fsm+tgl+branch+assert -f filelist.f -o simv
+                         Chronologic VCS (TM)
+       Version W-2024.09-SP1_Full64 -- Fri May  8 11:37:18 2026
+
+                    Copyright (c) 1991 - 2024 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS Release Notes
+
+Parsing design file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/uvm_pkg.sv'
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/macros/uvm_version_defines.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/macros/uvm_global_defines.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/macros/snps_macros.svp'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/macros/uvm_message_defines.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/macros/uvm_phase_defines.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/macros/uvm_object_defines.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/macros/uvm_printer_defines.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/macros/uvm_tlm_defines.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm1/uvm_tlm_imps.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/macros/uvm_tlm_defines.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/macros/uvm_sequence_defines.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/macros/uvm_callback_defines.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/macros/uvm_reg_defines.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/macros/uvm_deprecated_defines.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/uvm_macros.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/dpi/uvm_dpi.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/dpi/uvm_hdl.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/dpi/uvm_dpi.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/dpi/uvm_svcmd_dpi.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/dpi/uvm_dpi.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/dpi/uvm_regex.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/dpi/uvm_dpi.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_coreservice.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_version.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_object_globals.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_misc.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_object.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_pool.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_queue.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_factory.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_registry.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_spell_chkr.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_resource.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_resource_specializations.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_resource_db.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_config_db.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_printer.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_comparer.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_packer.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_links.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_tr_database.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_tr_stream.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_recorder.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_event_callback.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_event.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_barrier.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_callback.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/uvm_macros.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_callback.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_report_message.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_report_catcher.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_report_server.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_report_handler.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_report_object.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_transaction.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_phase.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_domain.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_bottomup_phase.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_topdown_phase.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_task_phase.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_common_phases.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_runtime_phases.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_component.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_root.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_component.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_objection.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_heartbeat.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_globals.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_cmdline_processor.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_traversal.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_base.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/dap/uvm_dap.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/dap/uvm_set_get_dap_base.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/dap/uvm_dap.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/dap/uvm_simple_lock_dap.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/dap/uvm_dap.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/dap/uvm_get_to_lock_dap.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/dap/uvm_dap.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/dap/uvm_set_before_get_dap.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/dap/uvm_dap.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm1/uvm_tlm_ifs.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm1/uvm_sqr_ifs.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_port_base.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm1/uvm_tlm_imps.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm1/uvm_imps.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm1/uvm_ports.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm1/uvm_exports.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm1/uvm_analysis_port.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm1/uvm_tlm_fifo_base.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm1/uvm_tlm_fifos.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm1/uvm_tlm_req_rsp.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm1/uvm_sqr_connections.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/comps/uvm_pair.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/comps/uvm_policies.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/comps/uvm_in_order_comparator.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/comps/uvm_algorithmic_comparator.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/comps/uvm_random_stimulus.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/comps/uvm_subscriber.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/comps/uvm_monitor.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/comps/uvm_driver.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/comps/uvm_push_driver.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/comps/uvm_scoreboard.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/comps/uvm_agent.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/comps/uvm_env.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/comps/uvm_test.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/comps/uvm_comps.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/seq/uvm_sequence_item.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/seq/uvm_sequencer_base.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/seq/uvm_sequencer_analysis_fifo.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/seq/uvm_sequencer_param_base.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/seq/uvm_sequencer.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/seq/uvm_push_sequencer.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/seq/uvm_sequence_base.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/seq/uvm_sequence.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/seq/uvm_sequence_library.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/seq/uvm_sequence_builtin.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/seq/uvm_seq.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm2/uvm_tlm2_defines.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm2/uvm_tlm2_time.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm2/uvm_tlm2_generic_payload.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm2/uvm_tlm2_ifs.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm2/uvm_tlm2_imps.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm2/uvm_tlm2_ports.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm2/uvm_tlm2_exports.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm2/uvm_tlm2_sockets_base.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm2/uvm_tlm2_sockets.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_item.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_adapter.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_predictor.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_sequence.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_cbs.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_backdoor.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_vreg_field.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_indirect.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_fifo.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_file.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_mem_mam.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_vreg.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_mem.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_map.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_block.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/sequences/uvm_reg_hw_reset_seq.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/sequences/uvm_reg_bit_bash_seq.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/sequences/uvm_mem_walk_seq.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/sequences/uvm_mem_access_seq.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/sequences/uvm_reg_access_seq.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/sequences/uvm_reg_mem_shared_access_seq.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/sequences/uvm_reg_mem_built_in_seq.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/sequences/uvm_reg_mem_hdl_paths_seq.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/snps_uvm_reg_bank.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/vcs/vcs_uvm_alt.sv'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/uvm_pkg.sv'.
+Parsing design file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/vcs/uvm_custom_install_vcs_recorder.sv'
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/vcs/msglog.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/vcs/uvm_msglog_report_server.sv'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/vcs/uvm_vcs_recorder.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/vcs/uvm_vcs_tr_database.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/vcs/uvm_vcs_tr_stream.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/vcs/uvm_vcs_tr_database.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/vcs/uvm_vcs_recorder.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/vcs/uvm_vcs_record_interface.sv'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing design file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv'
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/uvm_macros.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/verdi/uvm_verdi_recorder.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/verdi/uvm_verdi_pli_base.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/verdi/uvm_verdi_recorder.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/verdi/uvm_verdi_tr_database.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/verdi/uvm_verdi_tr_stream.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/verdi/uvm_verdi_tr_database.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/verdi/uvm_verdi_recorder.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/verdi/uvm_verdi_reg_map_recording.sv'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/verdi/uvm_verdi_message_catcher.svh'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/verdi/uvm_verdi_pli_base.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/verdi/uvm_verdi_message_catcher.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/verdi/uvm_verdi_factory.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/verdi/./dpi/uvm_verdi_dpi.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/verdi/uvm_verdi_reg_recording.sv'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/tools/synopsys/verdi/W-2024.09-SP2/share/PLI/VCS/include/verdi_trans_recorder_dpi.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/verdi/uvm_verdi_pli.svh'.
+Back to file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing design file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv'
+Parsing design file './rtl/spi_master.sv'
+Parsing design file './rtl/SPI_v1_0_S00_AXI.v'
+Parsing design file './rtl/SPI_v1_0.v'
+Parsing design file './tb/tb_axi_spi.sv'
+Parsing included file '/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/uvm_macros.svh'.
+Back to file './tb/tb_axi_spi.sv'.
+Parsing included file './tb/axi_interface.sv'.
+Back to file './tb/tb_axi_spi.sv'.
+Parsing included file './tb/spi_interface.sv'.
+Back to file './tb/tb_axi_spi.sv'.
+Parsing included file './tb/axi_seq_item.sv'.
+Back to file './tb/tb_axi_spi.sv'.
+Parsing included file './tb/spi_seq_item.sv'.
+Back to file './tb/tb_axi_spi.sv'.
+Parsing included file './tb/axi_sequence.sv'.
+Back to file './tb/tb_axi_spi.sv'.
+Parsing included file './tb/spi_sequence.sv'.
+Back to file './tb/tb_axi_spi.sv'.
+Parsing included file './tb/axi_driver.sv'.
+Back to file './tb/tb_axi_spi.sv'.
+Parsing included file './tb/spi_driver.sv'.
+Back to file './tb/tb_axi_spi.sv'.
+Parsing included file './tb/axi_monitor.sv'.
+Back to file './tb/tb_axi_spi.sv'.
+Parsing included file './tb/spi_monitor.sv'.
+Back to file './tb/tb_axi_spi.sv'.
+Parsing included file './tb/axi_agent.sv'.
+Back to file './tb/tb_axi_spi.sv'.
+Parsing included file './tb/spi_agent.sv'.
+Back to file './tb/tb_axi_spi.sv'.
+Parsing included file './tb/axi_spi_scoreboard.sv'.
+Back to file './tb/tb_axi_spi.sv'.
+Parsing included file './tb/axi_spi_coverage.sv'.
+Back to file './tb/tb_axi_spi.sv'.
+Parsing included file './tb/axi_spi_env.sv'.
+Back to file './tb/tb_axi_spi.sv'.
+Parsing included file './tb/axi_spi_virtual_sequence.sv'.
+Back to file './tb/tb_axi_spi.sv'.
+Parsing included file './tb/axi_spi_test.sv'.
+Back to file './tb/tb_axi_spi.sv'.
+Top Level Modules:
+       uvm_custom_install_recording
+       uvm_custom_install_verdi_recording
+       tb_axi_spi
+TimeScale is 1 ns / 1 ps
+
+Warning-[PCWM-W] Port connection width mismatch
+./tb/tb_axi_spi.sv, 53
+"SPI_v1_0 dut( .s00_axi_aclk (clk),  .s00_axi_aresetn (reset_n),  .s00_axi_awaddr (tb_axi_spi.a_if.awaddr),  .s00_axi_awprot (3'b0),  .s00_axi_awvalid (tb_axi_spi.a_if.awvalid),  .s00_axi_awready (tb_axi_spi.a_if.awready),  .s00_axi_wdata (tb_axi_spi.a_if.wdata),  .s00_axi_wvalid (tb_axi_spi.a_if.wvalid),  .s00_axi_wready (tb_axi_spi.a_if.wready),  .s00_axi_araddr (tb_axi_spi.a_if.araddr),  .s00_axi_arprot (3'b0),  .s00_axi_arvalid (tb_axi_spi.a_if.arvalid),  .s00_axi_arready (tb_axi_spi.a_if.arready),  .s00_axi_rdata (tb_axi_spi.a_if.rdata),  .s00_axi_rvalid (tb_axi_spi.a_if.rvalid),  .s00_axi_rready (tb_axi_spi.a_if.rready),  .s00_axi_wstrb (4'hf),  .s00_axi_bresp (tb_axi_spi.a_if.bresp),  .s00_axi_bvalid (tb_axi_spi.a_if.bvalid),  .s00_axi_bready (tb_ ... "
+  The following 32-bit expression is connected to 4-bit port "s00_axi_awaddr" 
+  of module "SPI_v1_0", instance "dut".
+  Expression: tb_axi_spi.a_if.awaddr
+  Instantiated module defined at: "./rtl/SPI_v1_0.v", 3
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+./tb/tb_axi_spi.sv, 53
+"SPI_v1_0 dut( .s00_axi_aclk (clk),  .s00_axi_aresetn (reset_n),  .s00_axi_awaddr (tb_axi_spi.a_if.awaddr),  .s00_axi_awprot (3'b0),  .s00_axi_awvalid (tb_axi_spi.a_if.awvalid),  .s00_axi_awready (tb_axi_spi.a_if.awready),  .s00_axi_wdata (tb_axi_spi.a_if.wdata),  .s00_axi_wvalid (tb_axi_spi.a_if.wvalid),  .s00_axi_wready (tb_axi_spi.a_if.wready),  .s00_axi_araddr (tb_axi_spi.a_if.araddr),  .s00_axi_arprot (3'b0),  .s00_axi_arvalid (tb_axi_spi.a_if.arvalid),  .s00_axi_arready (tb_axi_spi.a_if.arready),  .s00_axi_rdata (tb_axi_spi.a_if.rdata),  .s00_axi_rvalid (tb_axi_spi.a_if.rvalid),  .s00_axi_rready (tb_axi_spi.a_if.rready),  .s00_axi_wstrb (4'hf),  .s00_axi_bresp (tb_axi_spi.a_if.bresp),  .s00_axi_bvalid (tb_axi_spi.a_if.bvalid),  .s00_axi_bready (tb_ ... "
+  The following 32-bit expression is connected to 4-bit port "s00_axi_araddr" 
+  of module "SPI_v1_0", instance "dut".
+  Expression: tb_axi_spi.a_if.araddr
+  Instantiated module defined at: "./rtl/SPI_v1_0.v", 3
+  Use +lint=PCWM for more details.
+
+VCS Coverage Metrics Release W-2024.09-SP1_Full64 Copyright (c) 1991-2024 by Synopsys Inc.
+
+Warning-[INTFDV] VCD dumping of interface/program/package
+./tb/tb_axi_spi.sv, 95
+  Selective VCD dumping of interface 'axi_if' is not supported.  Selective VCD
+  dumping for interfaces, packages and programs is not supported.
+  Use full VCD dumping '$dumpvars(0)', or use VPD or FSDB dumping, recompile 
+  with '-debug_access'.
+
+Starting vcs inline pass...
+10 modules and 0 UDP read.
+recompiling module uvm_custom_install_verdi_recording
+	However, due to incremental compilation, only 1 module needs to be compiled. 
+make[1]: Entering directory '/home/hedu28/YJC/0430_AXI_SPI/csrc'
+make[1]: Leaving directory '/home/hedu28/YJC/0430_AXI_SPI/csrc'
+make[1]: Entering directory '/home/hedu28/YJC/0430_AXI_SPI/csrc'
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/tools/synopsys/vcs/W-2024.09-SP1/linux64/lib -L/tools/synopsys/vcs/W-2024.09-SP1/linux64/lib  -Wl,-rpath-link=./  /usr/lib64/libnuma.so.1 uvm_dpi.o uvm_verdi_dpi.o   objs/amcQw_d.o  _1869453_archive_1.so _prev_archive_1.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o            -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -lreader_common /tools/synopsys/vcs/W-2024.09-SP1/linux64/lib/libBA.a -luclinative /tools/synopsys/vcs/W-2024.09-SP1/linux64/lib/vcs_tls.o   -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive      ./../simv.daidir/vc_hdrs.o _vcs_pli_stub_.o   /tools/synopsys/vcs/W-2024.09-SP1/linux64/lib/vcs_save_restore_new.o /tools/synopsys/verdi/W-2024.09-SP2/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory '/home/hedu28/YJC/0430_AXI_SPI/csrc'
+CPU time: 5.084 seconds to compile + .204 seconds to elab + .370 seconds to link
+Verdi KDB elaboration done and the database successfully generated
+./simv +UVM_VERBOSITY=UVM_LOW +ntb_random_seed=1234 +UVM_TESTNAME=axi_spi_test -cm line+cond+fsm+tgl+branch+assert -cm_dir coverage.vdb -cm_name axi_spi_test_sim 
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid re-execution or '-suppress=ASLR_DETECTED_INFO' to suppress this message.
+Chronologic VCS simulator copyright 1991-2024
+Contains Synopsys proprietary information.
+Compiler version W-2024.09-SP1_Full64; Runtime version W-2024.09-SP1_Full64;  May  8 11:37 2026
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+
+ VCS Coverage Metrics Release W-2024.09-SP1_Full64 Copyright (c) 1991-2024 by Synopsys Inc.
+UVM_INFO @ 0: reporter [RNTST] Running test axi_spi_test...
+*Verdi* Loading libsscore_vcs202409.so
+FSDB Dumper for VCS, Release Verdi_W-2024.09-SP2, Linux x86_64/64bit, 03/03/2025
+(C) 1996 - 2025 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'novas.fsdb'
+*Verdi* : Begin traversing the scope (tb_axi_spi), layer (0).
+*Verdi* : End of traversing.
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_root.svh(589) @ 0: reporter [UVMTOP] UVM testbench topology:
+-----------------------------------------------------------------
+Name                       Type                       Size  Value
+-----------------------------------------------------------------
+uvm_test_top               axi_spi_test               -     @346 
+  m_env                    axi_spi_env                -     @359 
+    m_axi_agt              axi_agent                  -     @368 
+      m_drv                axi_driver                 -     @738 
+        rsp_port           uvm_analysis_port          -     @757 
+        seq_item_port      uvm_seq_item_pull_port     -     @747 
+      m_mon                axi_monitor                -     @582 
+        ap                 uvm_analysis_port          -     @591 
+      m_sqr                uvm_sequencer              -     @601 
+        rsp_export         uvm_analysis_export        -     @610 
+        seq_item_export    uvm_seq_item_pull_imp      -     @728 
+        arbitration_queue  array                      0     -    
+        lock_queue         array                      0     -    
+        num_last_reqs      integral                   32    'd1  
+        num_last_rsps      integral                   32    'd1  
+    m_cov                  axi_spi_coverage           -     @415 
+      axi_export           uvm_analysis_imp_axi       -     @424 
+      spi_export           uvm_analysis_imp_spi       -     @434 
+    m_scb                  axi_spi_scoreboard         -     @386 
+      axi_export           uvm_analysis_imp_axi       -     @395 
+      spi_export           uvm_analysis_imp_spi       -     @405 
+    m_spi_agt              spi_agent                  -     @377 
+      m_drv                spi_driver                 -     @931 
+        rsp_port           uvm_analysis_port          -     @950 
+        seq_item_port      uvm_seq_item_pull_port     -     @940 
+      m_mon                spi_monitor                -     @775 
+        ap                 uvm_analysis_port          -     @784 
+      m_sqr                uvm_sequencer              -     @794 
+        rsp_export         uvm_analysis_export        -     @803 
+        seq_item_export    uvm_seq_item_pull_imp      -     @921 
+        arbitration_queue  array                      0     -    
+        lock_queue         array                      0     -    
+        num_last_reqs      integral                   32    'd1  
+        num_last_rsps      integral                   32    'd1  
+    m_vsqr                 axi_spi_virtual_sequencer  -     @444 
+      rsp_export           uvm_analysis_export        -     @453 
+      seq_item_export      uvm_seq_item_pull_imp      -     @571 
+      arbitration_queue    array                      0     -    
+      lock_queue           array                      0     -    
+      num_last_reqs        integral                   32    'd1  
+      num_last_rsps        integral                   32    'd1  
+-----------------------------------------------------------------
+
+UVM_INFO ./tb/axi_spi_test.sv(36) @ 0: uvm_test_top [TEST] 시뮬레이션 시작: AXI-SPI Virtual Sequence 실행
+UVM_INFO ./tb/axi_monitor.sv(34) @ 125000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x0, Data=0x200
+UVM_INFO ./tb/axi_monitor.sv(34) @ 175000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1ef
+UVM_INFO ./tb/axi_monitor.sv(34) @ 215000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 655000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xef)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 655000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xef, MISO=0x64
+UVM_INFO ./tb/axi_monitor.sv(44) @ 2725000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 2755000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x64, SPI_MISO=0x64)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 2755000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x64
+UVM_INFO ./tb/axi_monitor.sv(34) @ 2795000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x12c
+UVM_INFO ./tb/axi_monitor.sv(34) @ 2835000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 3265000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x2c)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 3265000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x2c, MISO=0x66
+UVM_INFO ./tb/axi_monitor.sv(44) @ 5335000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 5365000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x66, SPI_MISO=0x66)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 5365000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x66
+UVM_INFO ./tb/axi_monitor.sv(34) @ 5405000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x112
+UVM_INFO ./tb/axi_monitor.sv(34) @ 5445000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 5875000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x12)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 5875000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x12, MISO=0x26
+UVM_INFO ./tb/axi_monitor.sv(44) @ 7945000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 7975000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x26, SPI_MISO=0x26)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 7975000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x26
+UVM_INFO ./tb/axi_monitor.sv(34) @ 8015000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x14a
+UVM_INFO ./tb/axi_monitor.sv(34) @ 8055000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 8485000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x4a)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 8485000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x4a, MISO=0xca
+UVM_INFO ./tb/axi_monitor.sv(44) @ 10555000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 10585000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xca, SPI_MISO=0xca)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 10585000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xca
+UVM_INFO ./tb/axi_monitor.sv(34) @ 10625000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x167
+UVM_INFO ./tb/axi_monitor.sv(34) @ 10665000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 11095000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x67)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 11095000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x67, MISO=0xf1
+UVM_INFO ./tb/axi_monitor.sv(44) @ 13165000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 13195000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xf1, SPI_MISO=0xf1)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 13195000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xf1
+UVM_INFO ./tb/axi_monitor.sv(34) @ 13235000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x114
+UVM_INFO ./tb/axi_monitor.sv(34) @ 13275000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 13705000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x14)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 13705000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x14, MISO=0xd2
+UVM_INFO ./tb/axi_monitor.sv(44) @ 15775000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 15805000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xd2, SPI_MISO=0xd2)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 15805000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xd2
+UVM_INFO ./tb/axi_monitor.sv(34) @ 15845000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x18c
+UVM_INFO ./tb/axi_monitor.sv(34) @ 15885000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 16315000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x8c)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 16315000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x8c, MISO=0x6c
+UVM_INFO ./tb/axi_monitor.sv(44) @ 18385000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 18415000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x6c, SPI_MISO=0x6c)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 18415000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x6c
+UVM_INFO ./tb/axi_monitor.sv(34) @ 18455000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1b3
+UVM_INFO ./tb/axi_monitor.sv(34) @ 18495000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 18925000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xb3)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 18925000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xb3, MISO=0xe0
+UVM_INFO ./tb/axi_monitor.sv(44) @ 20995000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 21025000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xe0, SPI_MISO=0xe0)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 21025000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xe0
+UVM_INFO ./tb/axi_monitor.sv(34) @ 21065000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x11d
+UVM_INFO ./tb/axi_monitor.sv(34) @ 21105000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 21535000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x1d)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 21535000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x1d, MISO=0x4
+UVM_INFO ./tb/axi_monitor.sv(44) @ 23605000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 23635000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x4, SPI_MISO=0x4)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 23635000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x4
+UVM_INFO ./tb/axi_monitor.sv(34) @ 23675000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x11b
+UVM_INFO ./tb/axi_monitor.sv(34) @ 23715000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 24145000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x1b)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 24145000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x1b, MISO=0x21
+UVM_INFO ./tb/axi_monitor.sv(44) @ 26215000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 26245000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x21, SPI_MISO=0x21)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 26245000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x21
+UVM_INFO ./tb/axi_monitor.sv(34) @ 26285000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x188
+UVM_INFO ./tb/axi_monitor.sv(34) @ 26325000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 26755000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x88)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 26755000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x88, MISO=0x82
+UVM_INFO ./tb/axi_monitor.sv(44) @ 28825000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 28855000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x82, SPI_MISO=0x82)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 28855000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x82
+UVM_INFO ./tb/axi_monitor.sv(34) @ 28895000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1a3
+UVM_INFO ./tb/axi_monitor.sv(34) @ 28935000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 29365000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xa3)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 29365000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xa3, MISO=0xeb
+UVM_INFO ./tb/axi_monitor.sv(44) @ 31435000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 31465000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xeb, SPI_MISO=0xeb)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 31465000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xeb
+UVM_INFO ./tb/axi_monitor.sv(34) @ 31505000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1ce
+UVM_INFO ./tb/axi_monitor.sv(34) @ 31545000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 31975000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xce)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 31975000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xce, MISO=0x72
+UVM_INFO ./tb/axi_monitor.sv(44) @ 34045000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 34075000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x72, SPI_MISO=0x72)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 34075000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x72
+UVM_INFO ./tb/axi_monitor.sv(34) @ 34115000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x144
+UVM_INFO ./tb/axi_monitor.sv(34) @ 34155000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 34585000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x44)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 34585000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x44, MISO=0x84
+UVM_INFO ./tb/axi_monitor.sv(44) @ 36655000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 36685000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x84, SPI_MISO=0x84)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 36685000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x84
+UVM_INFO ./tb/axi_monitor.sv(34) @ 36725000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1e9
+UVM_INFO ./tb/axi_monitor.sv(34) @ 36765000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 37195000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xe9)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 37195000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xe9, MISO=0xca
+UVM_INFO ./tb/axi_monitor.sv(44) @ 39265000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 39295000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xca, SPI_MISO=0xca)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 39295000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xca
+UVM_INFO ./tb/axi_monitor.sv(34) @ 39335000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x176
+UVM_INFO ./tb/axi_monitor.sv(34) @ 39375000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 39805000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x76)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 39805000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x76, MISO=0xd0
+UVM_INFO ./tb/axi_monitor.sv(44) @ 41875000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 41905000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xd0, SPI_MISO=0xd0)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 41905000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xd0
+UVM_INFO ./tb/axi_monitor.sv(34) @ 41945000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1bc
+UVM_INFO ./tb/axi_monitor.sv(34) @ 41985000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 42415000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xbc)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 42415000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xbc, MISO=0xad
+UVM_INFO ./tb/axi_monitor.sv(44) @ 44485000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 44515000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xad, SPI_MISO=0xad)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 44515000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xad
+UVM_INFO ./tb/axi_monitor.sv(34) @ 44555000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x105
+UVM_INFO ./tb/axi_monitor.sv(34) @ 44595000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 45025000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x5)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 45025000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x5, MISO=0xea
+UVM_INFO ./tb/axi_monitor.sv(44) @ 47095000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 47125000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xea, SPI_MISO=0xea)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 47125000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xea
+UVM_INFO ./tb/axi_monitor.sv(34) @ 47165000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x15e
+UVM_INFO ./tb/axi_monitor.sv(34) @ 47205000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 47635000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x5e)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 47635000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x5e, MISO=0xb0
+UVM_INFO ./tb/axi_monitor.sv(44) @ 49705000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 49735000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xb0, SPI_MISO=0xb0)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 49735000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xb0
+UVM_INFO ./tb/axi_monitor.sv(34) @ 49775000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x19d
+UVM_INFO ./tb/axi_monitor.sv(34) @ 49815000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 50245000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x9d)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 50245000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x9d, MISO=0x4a
+UVM_INFO ./tb/axi_monitor.sv(44) @ 52315000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 52345000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x4a, SPI_MISO=0x4a)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 52345000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x4a
+UVM_INFO ./tb/axi_monitor.sv(34) @ 52385000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1b1
+UVM_INFO ./tb/axi_monitor.sv(34) @ 52425000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 52855000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xb1)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 52855000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xb1, MISO=0xb3
+UVM_INFO ./tb/axi_monitor.sv(44) @ 54925000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 54955000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xb3, SPI_MISO=0xb3)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 54955000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xb3
+UVM_INFO ./tb/axi_monitor.sv(34) @ 54995000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x16e
+UVM_INFO ./tb/axi_monitor.sv(34) @ 55035000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 55465000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x6e)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 55465000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x6e, MISO=0xd4
+UVM_INFO ./tb/axi_monitor.sv(44) @ 57535000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 57565000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xd4, SPI_MISO=0xd4)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 57565000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xd4
+UVM_INFO ./tb/axi_monitor.sv(34) @ 57605000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x16f
+UVM_INFO ./tb/axi_monitor.sv(34) @ 57645000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 58075000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x6f)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 58075000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x6f, MISO=0x1f
+UVM_INFO ./tb/axi_monitor.sv(44) @ 60145000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 60175000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x1f, SPI_MISO=0x1f)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 60175000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x1f
+UVM_INFO ./tb/axi_monitor.sv(34) @ 60215000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x168
+UVM_INFO ./tb/axi_monitor.sv(34) @ 60255000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 60685000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x68)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 60685000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x68, MISO=0x6e
+UVM_INFO ./tb/axi_monitor.sv(44) @ 62755000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 62785000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x6e, SPI_MISO=0x6e)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 62785000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x6e
+UVM_INFO ./tb/axi_monitor.sv(34) @ 62825000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x15f
+UVM_INFO ./tb/axi_monitor.sv(34) @ 62865000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 63295000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x5f)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 63295000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x5f, MISO=0x92
+UVM_INFO ./tb/axi_monitor.sv(44) @ 65365000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 65395000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x92, SPI_MISO=0x92)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 65395000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x92
+UVM_INFO ./tb/axi_monitor.sv(34) @ 65435000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1b3
+UVM_INFO ./tb/axi_monitor.sv(34) @ 65475000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 65905000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xb3)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 65905000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xb3, MISO=0xf2
+UVM_INFO ./tb/axi_monitor.sv(44) @ 67975000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 68005000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xf2, SPI_MISO=0xf2)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 68005000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xf2
+UVM_INFO ./tb/axi_monitor.sv(34) @ 68045000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x132
+UVM_INFO ./tb/axi_monitor.sv(34) @ 68085000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 68515000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x32)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 68515000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x32, MISO=0x67
+UVM_INFO ./tb/axi_monitor.sv(44) @ 70585000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 70615000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x67, SPI_MISO=0x67)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 70615000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x67
+UVM_INFO ./tb/axi_monitor.sv(34) @ 70655000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x193
+UVM_INFO ./tb/axi_monitor.sv(34) @ 70695000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 71125000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x93)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 71125000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x93, MISO=0x12
+UVM_INFO ./tb/axi_monitor.sv(44) @ 73195000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 73225000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x12, SPI_MISO=0x12)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 73225000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x12
+UVM_INFO ./tb/axi_monitor.sv(34) @ 73265000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1e3
+UVM_INFO ./tb/axi_monitor.sv(34) @ 73305000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 73735000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xe3)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 73735000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xe3, MISO=0xe
+UVM_INFO ./tb/axi_monitor.sv(44) @ 75805000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 75835000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xe, SPI_MISO=0xe)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 75835000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xe
+UVM_INFO ./tb/axi_monitor.sv(34) @ 75875000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1cc
+UVM_INFO ./tb/axi_monitor.sv(34) @ 75915000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 76345000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xcc)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 76345000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xcc, MISO=0xb2
+UVM_INFO ./tb/axi_monitor.sv(44) @ 78415000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 78445000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xb2, SPI_MISO=0xb2)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 78445000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xb2
+UVM_INFO ./tb/axi_monitor.sv(34) @ 78485000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1fd
+UVM_INFO ./tb/axi_monitor.sv(34) @ 78525000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 78955000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xfd)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 78955000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xfd, MISO=0x65
+UVM_INFO ./tb/axi_monitor.sv(44) @ 81025000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 81055000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x65, SPI_MISO=0x65)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 81055000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x65
+UVM_INFO ./tb/axi_monitor.sv(34) @ 81095000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x136
+UVM_INFO ./tb/axi_monitor.sv(34) @ 81135000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 81565000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x36)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 81565000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x36, MISO=0x22
+UVM_INFO ./tb/axi_monitor.sv(44) @ 83635000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 83665000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x22, SPI_MISO=0x22)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 83665000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x22
+UVM_INFO ./tb/axi_monitor.sv(34) @ 83705000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x171
+UVM_INFO ./tb/axi_monitor.sv(34) @ 83745000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 84175000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x71)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 84175000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x71, MISO=0x2b
+UVM_INFO ./tb/axi_monitor.sv(44) @ 86245000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 86275000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x2b, SPI_MISO=0x2b)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 86275000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x2b
+UVM_INFO ./tb/axi_monitor.sv(34) @ 86315000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1bd
+UVM_INFO ./tb/axi_monitor.sv(34) @ 86355000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 86785000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xbd)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 86785000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xbd, MISO=0xe4
+UVM_INFO ./tb/axi_monitor.sv(44) @ 88855000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 88885000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xe4, SPI_MISO=0xe4)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 88885000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xe4
+UVM_INFO ./tb/axi_monitor.sv(34) @ 88925000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x190
+UVM_INFO ./tb/axi_monitor.sv(34) @ 88965000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 89395000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x90)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 89395000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x90, MISO=0xf2
+UVM_INFO ./tb/axi_monitor.sv(44) @ 91465000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 91495000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xf2, SPI_MISO=0xf2)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 91495000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xf2
+UVM_INFO ./tb/axi_monitor.sv(34) @ 91535000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x140
+UVM_INFO ./tb/axi_monitor.sv(34) @ 91575000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 92005000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x40)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 92005000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x40, MISO=0xdd
+UVM_INFO ./tb/axi_monitor.sv(44) @ 94075000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 94105000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xdd, SPI_MISO=0xdd)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 94105000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xdd
+UVM_INFO ./tb/axi_monitor.sv(34) @ 94145000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1a5
+UVM_INFO ./tb/axi_monitor.sv(34) @ 94185000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 94615000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xa5)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 94615000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xa5, MISO=0xd1
+UVM_INFO ./tb/axi_monitor.sv(44) @ 96685000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 96715000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xd1, SPI_MISO=0xd1)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 96715000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xd1
+UVM_INFO ./tb/axi_monitor.sv(34) @ 96755000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x139
+UVM_INFO ./tb/axi_monitor.sv(34) @ 96795000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 97225000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x39)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 97225000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x39, MISO=0x6c
+UVM_INFO ./tb/axi_monitor.sv(44) @ 99295000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 99325000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x6c, SPI_MISO=0x6c)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 99325000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x6c
+UVM_INFO ./tb/axi_monitor.sv(34) @ 99365000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1c4
+UVM_INFO ./tb/axi_monitor.sv(34) @ 99405000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 99835000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xc4)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 99835000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xc4, MISO=0xa0
+UVM_INFO ./tb/axi_monitor.sv(44) @ 101905000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 101935000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xa0, SPI_MISO=0xa0)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 101935000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xa0
+UVM_INFO ./tb/axi_monitor.sv(34) @ 101975000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x126
+UVM_INFO ./tb/axi_monitor.sv(34) @ 102015000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 102445000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x26)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 102445000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x26, MISO=0xf0
+UVM_INFO ./tb/axi_monitor.sv(44) @ 104515000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 104545000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xf0, SPI_MISO=0xf0)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 104545000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xf0
+UVM_INFO ./tb/axi_monitor.sv(34) @ 104585000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1cb
+UVM_INFO ./tb/axi_monitor.sv(34) @ 104625000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 105055000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xcb)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 105055000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xcb, MISO=0x92
+UVM_INFO ./tb/axi_monitor.sv(44) @ 107125000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 107155000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x92, SPI_MISO=0x92)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 107155000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x92
+UVM_INFO ./tb/axi_monitor.sv(34) @ 107195000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1af
+UVM_INFO ./tb/axi_monitor.sv(34) @ 107235000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 107665000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xaf)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 107665000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xaf, MISO=0x24
+UVM_INFO ./tb/axi_monitor.sv(44) @ 109735000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 109765000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x24, SPI_MISO=0x24)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 109765000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x24
+UVM_INFO ./tb/axi_monitor.sv(34) @ 109805000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1de
+UVM_INFO ./tb/axi_monitor.sv(34) @ 109845000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 110275000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xde)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 110275000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xde, MISO=0x72
+UVM_INFO ./tb/axi_monitor.sv(44) @ 112345000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 112375000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x72, SPI_MISO=0x72)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 112375000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x72
+UVM_INFO ./tb/axi_monitor.sv(34) @ 112415000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x199
+UVM_INFO ./tb/axi_monitor.sv(34) @ 112455000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 112885000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x99)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 112885000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x99, MISO=0xa3
+UVM_INFO ./tb/axi_monitor.sv(44) @ 114955000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 114985000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xa3, SPI_MISO=0xa3)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 114985000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xa3
+UVM_INFO ./tb/axi_monitor.sv(34) @ 115025000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x179
+UVM_INFO ./tb/axi_monitor.sv(34) @ 115065000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 115495000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x79)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 115495000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x79, MISO=0xb1
+UVM_INFO ./tb/axi_monitor.sv(44) @ 117565000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 117595000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xb1, SPI_MISO=0xb1)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 117595000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xb1
+UVM_INFO ./tb/axi_monitor.sv(34) @ 117635000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x10e
+UVM_INFO ./tb/axi_monitor.sv(34) @ 117675000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 118105000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xe)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 118105000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xe, MISO=0xe9
+UVM_INFO ./tb/axi_monitor.sv(44) @ 120175000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 120205000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xe9, SPI_MISO=0xe9)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 120205000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xe9
+UVM_INFO ./tb/axi_monitor.sv(34) @ 120245000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1a9
+UVM_INFO ./tb/axi_monitor.sv(34) @ 120285000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 120715000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xa9)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 120715000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xa9, MISO=0xe8
+UVM_INFO ./tb/axi_monitor.sv(44) @ 122785000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 122815000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xe8, SPI_MISO=0xe8)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 122815000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xe8
+UVM_INFO ./tb/axi_monitor.sv(34) @ 122855000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x10f
+UVM_INFO ./tb/axi_monitor.sv(34) @ 122895000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 123325000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xf)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 123325000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xf, MISO=0xa8
+UVM_INFO ./tb/axi_monitor.sv(44) @ 125395000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 125425000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xa8, SPI_MISO=0xa8)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 125425000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xa8
+UVM_INFO ./tb/axi_monitor.sv(34) @ 125465000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x107
+UVM_INFO ./tb/axi_monitor.sv(34) @ 125505000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 125935000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x7)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 125935000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x7, MISO=0xa7
+UVM_INFO ./tb/axi_monitor.sv(44) @ 128005000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 128035000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xa7, SPI_MISO=0xa7)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 128035000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xa7
+UVM_INFO ./tb/axi_monitor.sv(34) @ 128075000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1d0
+UVM_INFO ./tb/axi_monitor.sv(34) @ 128115000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 128545000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xd0)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 128545000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xd0, MISO=0x98
+UVM_INFO ./tb/axi_monitor.sv(44) @ 130615000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 130645000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x98, SPI_MISO=0x98)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 130645000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x98
+UVM_INFO ./tb/axi_monitor.sv(34) @ 130685000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x14c
+UVM_INFO ./tb/axi_monitor.sv(34) @ 130725000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 131155000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x4c)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 131155000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x4c, MISO=0xff
+UVM_INFO ./tb/axi_monitor.sv(44) @ 133225000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 133255000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xff, SPI_MISO=0xff)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 133255000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xff
+UVM_INFO ./tb/axi_monitor.sv(34) @ 133295000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x15a
+UVM_INFO ./tb/axi_monitor.sv(34) @ 133335000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 133765000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x5a)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 133765000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x5a, MISO=0x3c
+UVM_INFO ./tb/axi_monitor.sv(44) @ 135835000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 135865000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x3c, SPI_MISO=0x3c)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 135865000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x3c
+UVM_INFO ./tb/axi_monitor.sv(34) @ 135905000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x196
+UVM_INFO ./tb/axi_monitor.sv(34) @ 135945000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 136375000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x96)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 136375000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x96, MISO=0x21
+UVM_INFO ./tb/axi_monitor.sv(44) @ 138445000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 138475000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x21, SPI_MISO=0x21)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 138475000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x21
+UVM_INFO ./tb/axi_monitor.sv(34) @ 138515000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x160
+UVM_INFO ./tb/axi_monitor.sv(34) @ 138555000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 138985000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x60)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 138985000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x60, MISO=0xd5
+UVM_INFO ./tb/axi_monitor.sv(44) @ 141055000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 141085000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xd5, SPI_MISO=0xd5)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 141085000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xd5
+UVM_INFO ./tb/axi_monitor.sv(34) @ 141125000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1b5
+UVM_INFO ./tb/axi_monitor.sv(34) @ 141165000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 141595000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xb5)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 141595000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xb5, MISO=0xf7
+UVM_INFO ./tb/axi_monitor.sv(44) @ 143665000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 143695000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xf7, SPI_MISO=0xf7)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 143695000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xf7
+UVM_INFO ./tb/axi_monitor.sv(34) @ 143735000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1e8
+UVM_INFO ./tb/axi_monitor.sv(34) @ 143775000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 144205000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xe8)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 144205000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xe8, MISO=0x6c
+UVM_INFO ./tb/axi_monitor.sv(44) @ 146275000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 146305000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x6c, SPI_MISO=0x6c)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 146305000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x6c
+UVM_INFO ./tb/axi_monitor.sv(34) @ 146345000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1ab
+UVM_INFO ./tb/axi_monitor.sv(34) @ 146385000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 146815000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xab)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 146815000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xab, MISO=0xa4
+UVM_INFO ./tb/axi_monitor.sv(44) @ 148885000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 148915000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xa4, SPI_MISO=0xa4)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 148915000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xa4
+UVM_INFO ./tb/axi_monitor.sv(34) @ 148955000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x159
+UVM_INFO ./tb/axi_monitor.sv(34) @ 148995000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 149425000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x59)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 149425000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x59, MISO=0xa3
+UVM_INFO ./tb/axi_monitor.sv(44) @ 151495000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 151525000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xa3, SPI_MISO=0xa3)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 151525000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xa3
+UVM_INFO ./tb/axi_monitor.sv(34) @ 151565000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1b8
+UVM_INFO ./tb/axi_monitor.sv(34) @ 151605000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 152035000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xb8)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 152035000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xb8, MISO=0x42
+UVM_INFO ./tb/axi_monitor.sv(44) @ 154105000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 154135000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x42, SPI_MISO=0x42)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 154135000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x42
+UVM_INFO ./tb/axi_monitor.sv(34) @ 154175000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1e5
+UVM_INFO ./tb/axi_monitor.sv(34) @ 154215000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 154645000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xe5)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 154645000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xe5, MISO=0x5e
+UVM_INFO ./tb/axi_monitor.sv(44) @ 156715000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 156745000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x5e, SPI_MISO=0x5e)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 156745000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x5e
+UVM_INFO ./tb/axi_monitor.sv(34) @ 156785000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x142
+UVM_INFO ./tb/axi_monitor.sv(34) @ 156825000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 157255000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x42)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 157255000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x42, MISO=0x15
+UVM_INFO ./tb/axi_monitor.sv(44) @ 159325000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 159355000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x15, SPI_MISO=0x15)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 159355000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x15
+UVM_INFO ./tb/axi_monitor.sv(34) @ 159395000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x186
+UVM_INFO ./tb/axi_monitor.sv(34) @ 159435000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 159865000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x86)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 159865000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x86, MISO=0xc3
+UVM_INFO ./tb/axi_monitor.sv(44) @ 161935000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 161965000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xc3, SPI_MISO=0xc3)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 161965000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xc3
+UVM_INFO ./tb/axi_monitor.sv(34) @ 162005000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x13a
+UVM_INFO ./tb/axi_monitor.sv(34) @ 162045000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 162475000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x3a)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 162475000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x3a, MISO=0x1a
+UVM_INFO ./tb/axi_monitor.sv(44) @ 164545000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 164575000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x1a, SPI_MISO=0x1a)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 164575000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x1a
+UVM_INFO ./tb/axi_monitor.sv(34) @ 164615000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x154
+UVM_INFO ./tb/axi_monitor.sv(34) @ 164655000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 165085000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x54)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 165085000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x54, MISO=0x65
+UVM_INFO ./tb/axi_monitor.sv(44) @ 167155000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 167185000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x65, SPI_MISO=0x65)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 167185000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x65
+UVM_INFO ./tb/axi_monitor.sv(34) @ 167225000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1cf
+UVM_INFO ./tb/axi_monitor.sv(34) @ 167265000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 167695000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xcf)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 167695000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xcf, MISO=0xd1
+UVM_INFO ./tb/axi_monitor.sv(44) @ 169765000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 169795000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xd1, SPI_MISO=0xd1)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 169795000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xd1
+UVM_INFO ./tb/axi_monitor.sv(34) @ 169835000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x166
+UVM_INFO ./tb/axi_monitor.sv(34) @ 169875000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 170305000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x66)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 170305000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x66, MISO=0x62
+UVM_INFO ./tb/axi_monitor.sv(44) @ 172375000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 172405000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x62, SPI_MISO=0x62)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 172405000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x62
+UVM_INFO ./tb/axi_monitor.sv(34) @ 172445000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x11b
+UVM_INFO ./tb/axi_monitor.sv(34) @ 172485000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 172915000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x1b)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 172915000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x1b, MISO=0x36
+UVM_INFO ./tb/axi_monitor.sv(44) @ 174985000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 175015000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x36, SPI_MISO=0x36)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 175015000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x36
+UVM_INFO ./tb/axi_monitor.sv(34) @ 175055000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1ca
+UVM_INFO ./tb/axi_monitor.sv(34) @ 175095000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 175525000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xca)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 175525000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xca, MISO=0x8c
+UVM_INFO ./tb/axi_monitor.sv(44) @ 177595000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 177625000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x8c, SPI_MISO=0x8c)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 177625000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x8c
+UVM_INFO ./tb/axi_monitor.sv(34) @ 177665000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x127
+UVM_INFO ./tb/axi_monitor.sv(34) @ 177705000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 178135000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x27)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 178135000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x27, MISO=0xad
+UVM_INFO ./tb/axi_monitor.sv(44) @ 180205000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 180235000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xad, SPI_MISO=0xad)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 180235000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xad
+UVM_INFO ./tb/axi_monitor.sv(34) @ 180275000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x12d
+UVM_INFO ./tb/axi_monitor.sv(34) @ 180315000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 180745000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x2d)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 180745000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x2d, MISO=0x5d
+UVM_INFO ./tb/axi_monitor.sv(44) @ 182815000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 182845000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x5d, SPI_MISO=0x5d)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 182845000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x5d
+UVM_INFO ./tb/axi_monitor.sv(34) @ 182885000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x19a
+UVM_INFO ./tb/axi_monitor.sv(34) @ 182925000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 183355000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x9a)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 183355000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x9a, MISO=0x42
+UVM_INFO ./tb/axi_monitor.sv(44) @ 185425000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 185455000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x42, SPI_MISO=0x42)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 185455000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x42
+UVM_INFO ./tb/axi_monitor.sv(34) @ 185495000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1fd
+UVM_INFO ./tb/axi_monitor.sv(34) @ 185535000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 185965000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xfd)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 185965000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xfd, MISO=0x4e
+UVM_INFO ./tb/axi_monitor.sv(44) @ 188035000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 188065000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x4e, SPI_MISO=0x4e)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 188065000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x4e
+UVM_INFO ./tb/axi_monitor.sv(34) @ 188105000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1a8
+UVM_INFO ./tb/axi_monitor.sv(34) @ 188145000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 188575000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xa8)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 188575000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xa8, MISO=0x41
+UVM_INFO ./tb/axi_monitor.sv(44) @ 190645000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 190675000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x41, SPI_MISO=0x41)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 190675000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x41
+UVM_INFO ./tb/axi_monitor.sv(34) @ 190715000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1c8
+UVM_INFO ./tb/axi_monitor.sv(34) @ 190755000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 191185000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xc8)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 191185000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xc8, MISO=0x51
+UVM_INFO ./tb/axi_monitor.sv(44) @ 193255000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 193285000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x51, SPI_MISO=0x51)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 193285000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x51
+UVM_INFO ./tb/axi_monitor.sv(34) @ 193325000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1e6
+UVM_INFO ./tb/axi_monitor.sv(34) @ 193365000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 193795000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xe6)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 193795000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xe6, MISO=0x81
+UVM_INFO ./tb/axi_monitor.sv(44) @ 195865000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 195895000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x81, SPI_MISO=0x81)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 195895000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x81
+UVM_INFO ./tb/axi_monitor.sv(34) @ 195935000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1f0
+UVM_INFO ./tb/axi_monitor.sv(34) @ 195975000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 196405000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xf0)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 196405000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xf0, MISO=0x34
+UVM_INFO ./tb/axi_monitor.sv(44) @ 198475000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 198505000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x34, SPI_MISO=0x34)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 198505000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x34
+UVM_INFO ./tb/axi_monitor.sv(34) @ 198545000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x12e
+UVM_INFO ./tb/axi_monitor.sv(34) @ 198585000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 199015000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x2e)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 199015000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x2e, MISO=0xc6
+UVM_INFO ./tb/axi_monitor.sv(44) @ 201085000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 201115000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xc6, SPI_MISO=0xc6)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 201115000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xc6
+UVM_INFO ./tb/axi_monitor.sv(34) @ 201155000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x193
+UVM_INFO ./tb/axi_monitor.sv(34) @ 201195000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 201625000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x93)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 201625000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x93, MISO=0x8a
+UVM_INFO ./tb/axi_monitor.sv(44) @ 203695000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 203725000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x8a, SPI_MISO=0x8a)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 203725000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x8a
+UVM_INFO ./tb/axi_monitor.sv(34) @ 203765000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x16b
+UVM_INFO ./tb/axi_monitor.sv(34) @ 203805000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 204235000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x6b)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 204235000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x6b, MISO=0x92
+UVM_INFO ./tb/axi_monitor.sv(44) @ 206305000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 206335000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x92, SPI_MISO=0x92)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 206335000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x92
+UVM_INFO ./tb/axi_monitor.sv(34) @ 206375000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x141
+UVM_INFO ./tb/axi_monitor.sv(34) @ 206415000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 206845000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x41)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 206845000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x41, MISO=0x73
+UVM_INFO ./tb/axi_monitor.sv(44) @ 208915000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 208945000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x73, SPI_MISO=0x73)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 208945000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x73
+UVM_INFO ./tb/axi_monitor.sv(34) @ 208985000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x145
+UVM_INFO ./tb/axi_monitor.sv(34) @ 209025000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 209455000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x45)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 209455000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x45, MISO=0x37
+UVM_INFO ./tb/axi_monitor.sv(44) @ 211525000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 211555000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x37, SPI_MISO=0x37)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 211555000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x37
+UVM_INFO ./tb/axi_monitor.sv(34) @ 211595000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x13a
+UVM_INFO ./tb/axi_monitor.sv(34) @ 211635000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 212065000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x3a)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 212065000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x3a, MISO=0x5b
+UVM_INFO ./tb/axi_monitor.sv(44) @ 214135000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 214165000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x5b, SPI_MISO=0x5b)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 214165000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x5b
+UVM_INFO ./tb/axi_monitor.sv(34) @ 214205000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x104
+UVM_INFO ./tb/axi_monitor.sv(34) @ 214245000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 214675000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x4)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 214675000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x4, MISO=0x42
+UVM_INFO ./tb/axi_monitor.sv(44) @ 216745000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 216775000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x42, SPI_MISO=0x42)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 216775000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x42
+UVM_INFO ./tb/axi_monitor.sv(34) @ 216815000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1fc
+UVM_INFO ./tb/axi_monitor.sv(34) @ 216855000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 217285000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xfc)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 217285000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xfc, MISO=0x25
+UVM_INFO ./tb/axi_monitor.sv(44) @ 219355000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 219385000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x25, SPI_MISO=0x25)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 219385000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x25
+UVM_INFO ./tb/axi_monitor.sv(34) @ 219425000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1c3
+UVM_INFO ./tb/axi_monitor.sv(34) @ 219465000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 219895000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xc3)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 219895000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xc3, MISO=0xfc
+UVM_INFO ./tb/axi_monitor.sv(44) @ 221965000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 221995000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xfc, SPI_MISO=0xfc)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 221995000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xfc
+UVM_INFO ./tb/axi_monitor.sv(34) @ 222035000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x132
+UVM_INFO ./tb/axi_monitor.sv(34) @ 222075000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 222505000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x32)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 222505000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x32, MISO=0xa7
+UVM_INFO ./tb/axi_monitor.sv(44) @ 224575000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 224605000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xa7, SPI_MISO=0xa7)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 224605000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xa7
+UVM_INFO ./tb/axi_monitor.sv(34) @ 224645000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x11c
+UVM_INFO ./tb/axi_monitor.sv(34) @ 224685000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 225115000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x1c)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 225115000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x1c, MISO=0xe9
+UVM_INFO ./tb/axi_monitor.sv(44) @ 227185000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 227215000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xe9, SPI_MISO=0xe9)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 227215000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xe9
+UVM_INFO ./tb/axi_monitor.sv(34) @ 227255000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x14a
+UVM_INFO ./tb/axi_monitor.sv(34) @ 227295000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 227725000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x4a)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 227725000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x4a, MISO=0x3a
+UVM_INFO ./tb/axi_monitor.sv(44) @ 229795000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 229825000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x3a, SPI_MISO=0x3a)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 229825000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x3a
+UVM_INFO ./tb/axi_monitor.sv(34) @ 229865000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1fd
+UVM_INFO ./tb/axi_monitor.sv(34) @ 229905000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 230335000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xfd)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 230335000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xfd, MISO=0x62
+UVM_INFO ./tb/axi_monitor.sv(44) @ 232405000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 232435000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x62, SPI_MISO=0x62)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 232435000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x62
+UVM_INFO ./tb/axi_monitor.sv(34) @ 232475000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1c2
+UVM_INFO ./tb/axi_monitor.sv(34) @ 232515000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 232945000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xc2)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 232945000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xc2, MISO=0xe7
+UVM_INFO ./tb/axi_monitor.sv(44) @ 235015000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 235045000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xe7, SPI_MISO=0xe7)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 235045000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xe7
+UVM_INFO ./tb/axi_monitor.sv(34) @ 235085000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x17c
+UVM_INFO ./tb/axi_monitor.sv(34) @ 235125000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 235555000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x7c)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 235555000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x7c, MISO=0x80
+UVM_INFO ./tb/axi_monitor.sv(44) @ 237625000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 237655000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x80, SPI_MISO=0x80)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 237655000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x80
+UVM_INFO ./tb/axi_monitor.sv(34) @ 237695000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x18d
+UVM_INFO ./tb/axi_monitor.sv(34) @ 237735000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 238165000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x8d)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 238165000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x8d, MISO=0x3c
+UVM_INFO ./tb/axi_monitor.sv(44) @ 240235000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 240265000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x3c, SPI_MISO=0x3c)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 240265000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x3c
+UVM_INFO ./tb/axi_monitor.sv(34) @ 240305000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x19a
+UVM_INFO ./tb/axi_monitor.sv(34) @ 240345000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 240775000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x9a)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 240775000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x9a, MISO=0x90
+UVM_INFO ./tb/axi_monitor.sv(44) @ 242845000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 242875000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x90, SPI_MISO=0x90)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 242875000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x90
+UVM_INFO ./tb/axi_monitor.sv(34) @ 242915000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x131
+UVM_INFO ./tb/axi_monitor.sv(34) @ 242955000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 243385000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x31)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 243385000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x31, MISO=0xab
+UVM_INFO ./tb/axi_monitor.sv(44) @ 245455000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 245485000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xab, SPI_MISO=0xab)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 245485000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xab
+UVM_INFO ./tb/axi_monitor.sv(34) @ 245525000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x179
+UVM_INFO ./tb/axi_monitor.sv(34) @ 245565000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 245995000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x79)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 245995000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x79, MISO=0xb8
+UVM_INFO ./tb/axi_monitor.sv(44) @ 248065000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 248095000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0xb8, SPI_MISO=0xb8)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 248095000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0xb8
+UVM_INFO ./tb/axi_monitor.sv(34) @ 248135000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1bc
+UVM_INFO ./tb/axi_monitor.sv(34) @ 248175000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 248605000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xbc)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 248605000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xbc, MISO=0x5
+UVM_INFO ./tb/axi_monitor.sv(44) @ 250675000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 250705000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x5, SPI_MISO=0x5)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 250705000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x5
+UVM_INFO ./tb/axi_monitor.sv(34) @ 250745000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x1df
+UVM_INFO ./tb/axi_monitor.sv(34) @ 250785000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 251215000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xdf)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 251215000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xdf, MISO=0x9e
+UVM_INFO ./tb/axi_monitor.sv(44) @ 253285000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 253315000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x9e, SPI_MISO=0x9e)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 253315000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x9e
+UVM_INFO ./tb/axi_monitor.sv(34) @ 253355000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x19c
+UVM_INFO ./tb/axi_monitor.sv(34) @ 253395000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 253825000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x9c)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 253825000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x9c, MISO=0x36
+UVM_INFO ./tb/axi_monitor.sv(44) @ 255895000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 255925000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x36, SPI_MISO=0x36)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 255925000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x36
+UVM_INFO ./tb/axi_monitor.sv(34) @ 255965000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x10c
+UVM_INFO ./tb/axi_monitor.sv(34) @ 256005000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 256435000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0xc)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 256435000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0xc, MISO=0x32
+UVM_INFO ./tb/axi_monitor.sv(44) @ 258505000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 258535000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x32, SPI_MISO=0x32)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 258535000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x32
+UVM_INFO ./tb/axi_monitor.sv(34) @ 258575000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x150
+UVM_INFO ./tb/axi_monitor.sv(34) @ 258615000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Write 감지: Addr=0x4, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(57) @ 259045000: uvm_test_top.m_env.m_scb [SCB] PASS: MOSI Match (0x50)
+UVM_INFO ./tb/spi_monitor.sv(35) @ 259045000: uvm_test_top.m_env.m_spi_agt.m_mon [SPI_MON] SPI 통신 포착: MOSI=0x50, MISO=0x89
+UVM_INFO ./tb/axi_monitor.sv(44) @ 261115000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0xc, Data=0x0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(38) @ 261145000: uvm_test_top.m_env.m_scb [SCB] PASS: MISO Match (AXI_RDATA=0x89, SPI_MISO=0x89)
+UVM_INFO ./tb/axi_monitor.sv(44) @ 261145000: uvm_test_top.m_env.m_axi_agt.m_mon [AXI_MON] Read 감지: Addr=0x8, Data=0x89
+UVM_INFO ./tb/axi_spi_test.sv(45) @ 261245000: uvm_test_top [TEST] 시뮬레이션 종료: 모든 시퀀스 완료
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_objection.svh(1276) @ 261245000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO ./tb/axi_spi_scoreboard.sv(73) @ 261245000: uvm_test_top.m_env.m_scb [SCB_RESULT] 
+==================================================
+UVM_INFO ./tb/axi_spi_scoreboard.sv(74) @ 261245000: uvm_test_top.m_env.m_scb [SCB_RESULT]  [SCOREBOARD FINAL REPORT]
+UVM_INFO ./tb/axi_spi_scoreboard.sv(75) @ 261245000: uvm_test_top.m_env.m_scb [SCB_RESULT]   - TOTAL PASS : 200
+UVM_INFO ./tb/axi_spi_scoreboard.sv(76) @ 261245000: uvm_test_top.m_env.m_scb [SCB_RESULT]   - TOTAL FAIL : 0
+UVM_INFO ./tb/axi_spi_scoreboard.sv(79) @ 261245000: uvm_test_top.m_env.m_scb [SCB_RESULT]  [RESULT] SUCCESS! All transactions matched perfectly.
+UVM_INFO ./tb/axi_spi_scoreboard.sv(83) @ 261245000: uvm_test_top.m_env.m_scb [SCB_RESULT] ==================================================
+
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_report_catcher.svh(705) @ 261245000: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_report_server.svh(904) @ 261245000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  714
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[AXI_MON]   401
+[RNTST]     1
+[SCB]   200
+[SCB_RESULT]     6
+[SPI_MON]   100
+[TEST]     2
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+[UVMTOP]     1
+
+$finish called from file "/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_root.svh", line 527.
+$finish at simulation time            261245000
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitored
+---------------------------------------------------------------------------
+
+ Coverage status: End of All Coverages ...
+
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 261245000 ps
+CPU Time:      0.490 seconds;       Data structure size:   0.7Mb
+Fri May  8 11:37:24 2026
