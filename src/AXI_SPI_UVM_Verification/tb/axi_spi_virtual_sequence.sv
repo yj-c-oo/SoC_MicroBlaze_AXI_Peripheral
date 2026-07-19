@@ -69,6 +69,17 @@ class axi_spi_virtual_sequence extends uvm_sequence;
       m_axi_seq.addr = 32'h8; 
       m_axi_seq.we = 0; 
       m_axi_seq.start(p_sequencer.p_axi_sqr); // RX Data 읽기
+
+      // [6] CTRL / TX Read-back (cross_addr_we 100% + 읽기 mux 경로 검증)
+      m_axi_seq = axi_sequence::type_id::create("m_axi_seq");
+      m_axi_seq.addr = 32'h0;
+      m_axi_seq.we = 0;
+      m_axi_seq.start(p_sequencer.p_axi_sqr); // CTRL 읽기
+
+      m_axi_seq = axi_sequence::type_id::create("m_axi_seq");
+      m_axi_seq.addr = 32'h4;
+      m_axi_seq.we = 0;
+      m_axi_seq.start(p_sequencer.p_axi_sqr); // TX 읽기
     end
   endtask
 endclass
