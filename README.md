@@ -61,7 +61,6 @@ FPGA 한 대에 **Master IP**를, 다른 한 대에 **RTL로 설계한 Slave 모
 └── docs/                             # 블록도 및 검증 결과 이미지
 ```
 
-> UVM 검증 환경은 **SPI Peripheral**을 대상으로 구축했습니다.
 
 ---
 
@@ -196,6 +195,10 @@ if (Button_GetState(&hBtnStart) == ACT_PUSHED) {
 ---
 
 ## 6. UVM 검증
+
+FPGA 구현을 통한 정상 동작 확인은 SPI·I2C 두 Peripheral 모두에 대해 수행했으며,
+UVM 기능 검증은 그중 **SPI Peripheral**을 대상으로 진행했습니다.
+(SPI와 I2C는 동일한 AXI4-Lite Slave 구조를 공유하므로, 검증 환경도 SPI 기준으로 구축했습니다.)
 
 ### 6.1 환경 구조
 
