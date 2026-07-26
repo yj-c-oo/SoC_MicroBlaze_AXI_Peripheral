@@ -1,4 +1,4 @@
-# MicroBlaze 기반 Custom AXI SoC 설계 및 검증
+﻿# MicroBlaze 기반 Custom AXI SoC 설계 및 검증
 
 AMBA **AXI4-Lite** 인터페이스를 갖는 **SPI / I2C Peripheral IP**를 직접 설계하고,
 MicroBlaze 기반 SoC에 통합하여 **FPGA 보드 간 통신**을 구현한 뒤,
@@ -69,7 +69,7 @@ FPGA 한 대에 **Master IP**를, 다른 한 대에 **RTL로 설계한 Slave 모
 
 ### 3.1 Block Design
 
-![SPI Block Diagram](docs\spi_block_diagram.png)
+![SPI Block Diagram](docs/spi_block_diagram.png)
 
 MicroBlaze를 중심으로 직접 설계한 SPI Peripheral IP와 GPIO, Timer IP를
 AXI Interconnect에 연결해 SoC를 구성했습니다.
@@ -95,13 +95,13 @@ AXI Interconnect에 연결해 SoC를 구성했습니다.
 
 ### 3.2 IP Hierarchy
 
-![SPI Hierarchy](docs\spi_hierarchy.png)
+![SPI Hierarchy](docs/spi_hierarchy.png)
 
 `SPI_v1_0` (IP Top) → `SPI_v1_0_S00_AXI` (AXI Slave + Register) → `spi_master` (Protocol FSM)
 의 3계층 구조입니다. AXI 인터페이스와 프로토콜 로직을 분리해,
 동일한 AXI Slave 구조 위에 I2C Master를 얹는 방식으로 재사용했습니다.
 
-![I2C Block Diagram](docs\i2c_block_diagram.png)
+![I2C Block Diagram](docs/i2c_block_diagram.png)
 
 ---
 
@@ -151,7 +151,7 @@ IDLE ──start──> START ──> DATA ──bit_cnt==7──> STOP ──> 
 START / STOP condition, 7-bit 주소 + R/W, ACK/NACK 처리를 포함한 별도 FSM으로 구현하고,
 동일한 AXI4-Lite Slave 구조 위에 연결했습니다.
 
-![I2C Hierarchy](docs\i2c_hierarchy.png)
+![I2C Hierarchy](docs/i2c_hierarchy.png)
 
 ---
 
@@ -191,7 +191,7 @@ if (Button_GetState(&hBtnStart) == ACT_PUSHED) {
 
 ### 6.1 환경 구조
 
-![UVM Architecture](docs\uvm_architecture.png)
+![UVM Architecture](docs/uvm_architecture.png)
 
 DUT가 **AXI(입력)** 와 **SPI(출력)** 라는 서로 다른 두 인터페이스를 갖기 때문에,
 Agent를 두 개 두고 **Virtual Sequencer / Virtual Sequence**로 시나리오를 통합 제어했습니다.
@@ -206,7 +206,7 @@ Agent를 두 개 두고 **Virtual Sequencer / Virtual Sequence**로 시나리오
 
 ### 6.2 Virtual Sequence
 
-![UVM Sequence](docs\uvm_sequence.png)
+![UVM Sequence](docs/uvm_sequence.png)
 
 두 시퀀스를 지휘하는 상위 시퀀스로, `fork-join`을 사용해
 **Master 전송과 Slave 응답 준비를 동시에 실행**합니다.
@@ -217,7 +217,7 @@ Agent를 두 개 두고 **Virtual Sequencer / Virtual Sequence**로 시나리오
 
 ### 6.3 검증 시나리오
 
-![Verification Scenario](docs\verification_scenario.png)
+![Verification Scenario](docs/verification_scenario.png)
 
 Virtual Sequence는 다음 순서를 반복 수행합니다.
 
@@ -244,7 +244,7 @@ Constrained Randomize를 AXI→SPI(MOSI), SPI→AXI(MISO) 양방향 데이터에
 즉 **AXI WDATA == SPI MOSI**, **SPI MISO == AXI RDATA** 두 조건을 모두 확인하며,
 `report_phase`에서 PASS/FAIL 누계를 출력합니다.
 
-![Scoreboard Result](docs\scoreboard_result.png)
+![Scoreboard Result](docs/scoreboard_result.png)
 
 ### 6.5 Functional Coverage
 
@@ -255,7 +255,7 @@ Constrained Randomize를 AXI→SPI(MOSI), SPI→AXI(MISO) 양방향 데이터에
 
 Read-Only 레지스터에 대한 write는 발생할 수 없으므로 `ignore_bins`로 제외했습니다.
 
-![Functional Coverage](docs\functional_coverage.png)
+![Functional Coverage](docs/functional_coverage.png)
 
 ### 6.6 검증 결과
 
