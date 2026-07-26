@@ -333,12 +333,3 @@ MISO를 초기화하지 않으면 값이 `X` 상태로 남아 드라이버가 �
 read-back 시퀀스를 추가해 읽기 경로까지 자극했고 `cross_addr_we` 6/6을 달성했습니다.
 커버리지 미달을 만나면 **자극을 추가할 문제인지, 배제가 타당한 경우인지**를
 먼저 구분해야 한다는 것을 배웠습니다.
-
----
-
-## 9. 개선 계획
-
-- 에러 응답(SLVERR) 및 잘못된 주소 접근에 대한 negative test 추가
-- 데이터 경계값(0x00 / 0xFF / 0xAA / 0x55) directed test로 corner case 보강
-- I2C Peripheral에 대해서도 동일한 UVM 환경 구축
-- Assertion(SVA) 기반 AXI 프로토콜 검사 추가
