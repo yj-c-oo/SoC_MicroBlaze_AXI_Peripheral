@@ -69,7 +69,9 @@ FPGA 한 대에 **Master IP**를, 다른 한 대에 **RTL로 설계한 Slave 모
 
 ### 3.1 Block Design
 
-![SPI Block Diagram](docs/spi_block_diagram.png)
+<p align="center">
+  <img src="docs/spi_block_diagram.png" width="680" alt="SPI Block Diagram">
+</p>
 
 MicroBlaze를 중심으로 직접 설계한 SPI Peripheral IP와 GPIO, Timer IP를
 AXI Interconnect에 연결해 SoC를 구성했습니다.
@@ -95,13 +97,17 @@ AXI Interconnect에 연결해 SoC를 구성했습니다.
 
 ### 3.2 IP Hierarchy
 
-![SPI Hierarchy](docs/spi_hierarchy.png)
+<p align="center">
+  <img src="docs/spi_hierarchy.png" width="560" alt="SPI Hierarchy">
+</p>
 
 `SPI_v1_0` (IP Top) → `SPI_v1_0_S00_AXI` (AXI Slave + Register) → `spi_master` (Protocol FSM)
 의 3계층 구조입니다. AXI 인터페이스와 프로토콜 로직을 분리해,
 동일한 AXI Slave 구조 위에 I2C Master를 얹는 방식으로 재사용했습니다.
 
-![I2C Block Diagram](docs/i2c_block_diagram.png)
+<p align="center">
+  <img src="docs/i2c_block_diagram.png" width="680" alt="I2C Block Diagram">
+</p>
 
 ---
 
@@ -151,7 +157,9 @@ IDLE ──start──> START ──> DATA ──bit_cnt==7──> STOP ──> 
 START / STOP condition, 7-bit 주소 + R/W, ACK/NACK 처리를 포함한 별도 FSM으로 구현하고,
 동일한 AXI4-Lite Slave 구조 위에 연결했습니다.
 
-![I2C Hierarchy](docs/i2c_hierarchy.png)
+<p align="center">
+  <img src="docs/i2c_hierarchy.png" width="560" alt="I2C Hierarchy">
+</p>
 
 ---
 
@@ -191,7 +199,9 @@ if (Button_GetState(&hBtnStart) == ACT_PUSHED) {
 
 ### 6.1 환경 구조
 
-![UVM Architecture](docs/uvm_architecture.png)
+<p align="center">
+  <img src="docs/uvm_architecture.png" width="380" alt="UVM Architecture">
+</p>
 
 DUT가 **AXI(입력)** 와 **SPI(출력)** 라는 서로 다른 두 인터페이스를 갖기 때문에,
 Agent를 두 개 두고 **Virtual Sequencer / Virtual Sequence**로 시나리오를 통합 제어했습니다.
@@ -206,7 +216,9 @@ Agent를 두 개 두고 **Virtual Sequencer / Virtual Sequence**로 시나리오
 
 ### 6.2 Virtual Sequence
 
-![UVM Sequence](docs/uvm_sequence.png)
+<p align="center">
+  <img src="docs/uvm_sequence.png" width="520" alt="UVM Sequence">
+</p>
 
 두 시퀀스를 지휘하는 상위 시퀀스로, `fork-join`을 사용해
 **Master 전송과 Slave 응답 준비를 동시에 실행**합니다.
@@ -217,7 +229,9 @@ Agent를 두 개 두고 **Virtual Sequencer / Virtual Sequence**로 시나리오
 
 ### 6.3 검증 시나리오
 
-![Verification Scenario](docs/verification_scenario.png)
+<p align="center">
+  <img src="docs/verification_scenario.png" width="620" alt="Verification Scenario">
+</p>
 
 Virtual Sequence는 다음 순서를 반복 수행합니다.
 
@@ -244,7 +258,9 @@ Constrained Randomize를 AXI→SPI(MOSI), SPI→AXI(MISO) 양방향 데이터에
 즉 **AXI WDATA == SPI MOSI**, **SPI MISO == AXI RDATA** 두 조건을 모두 확인하며,
 `report_phase`에서 PASS/FAIL 누계를 출력합니다.
 
-![Scoreboard Result](docs/scoreboard_result.png)
+<p align="center">
+  <img src="docs/scoreboard_result.png" width="700" alt="Scoreboard Result">
+</p>
 
 ### 6.5 Functional Coverage
 
@@ -255,7 +271,9 @@ Constrained Randomize를 AXI→SPI(MOSI), SPI→AXI(MISO) 양방향 데이터에
 
 Read-Only 레지스터에 대한 write는 발생할 수 없으므로 `ignore_bins`로 제외했습니다.
 
-![Functional Coverage](docs/functional_coverage.png)
+<p align="center">
+  <img src="docs/functional_coverage.png" width="680" alt="Functional Coverage">
+</p>
 
 ### 6.6 검증 결과
 
@@ -292,7 +310,7 @@ Makefile에는 `line + cond + fsm + tgl + branch + assert` 커버리지 옵션�
 
 ---
 
-## 8. 문제 해결 및 배운 점
+## 8. 문제 해결
 
 ### Agent가 2개인 환경의 시퀀스 제어
 
@@ -302,8 +320,6 @@ Makefile에는 `line + cond + fsm + tgl + branch + assert` 커버리지 옵션�
 
 이를 해결하기 위해 **Virtual Sequencer / Virtual Sequence**를 도입해
 두 Agent의 시퀀스를 상위 시나리오에서 `fork-join`으로 동기화했습니다.
-서로 다른 인터페이스를 갖는 DUT에서 왜 virtual sequence가 필요한지를
-직접 겪으며 이해할 수 있었던 부분입니다.
 
 ### START 비트의 무한 재트리거
 
@@ -331,5 +347,3 @@ MISO를 초기화하지 않으면 값이 `X` 상태로 남아 드라이버가 �
 (RX·STATUS는 쓰기 경로 자체가 없어 `ignore_bins`가 타당한 경우입니다.)
 
 read-back 시퀀스를 추가해 읽기 경로까지 자극했고 `cross_addr_we` 6/6을 달성했습니다.
-커버리지 미달을 만나면 **자극을 추가할 문제인지, 배제가 타당한 경우인지**를
-먼저 구분해야 한다는 것을 배웠습니다.
