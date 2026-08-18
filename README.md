@@ -1,4 +1,4 @@
-﻿# MicroBlaze 기반 Custom AXI SoC 설계 및 검증
+# MicroBlaze 기반 Custom AXI SoC 설계 및 검증
 
 AMBA **AXI4-Lite** 인터페이스를 갖는 **SPI / I2C Peripheral IP**를 직접 설계하고,
 MicroBlaze 기반 SoC에 통합하여 **FPGA 보드 간 통신**을 구현한 뒤,
@@ -33,31 +33,30 @@ FPGA 한 대에 **Master IP**를, 다른 한 대에 **RTL로 설계한 Slave 모
 
 ```
 .
-├── src/
-│   ├── AXI_SPI_UVM_Verification/     # SPI Peripheral UVM 검증 환경
-│   │   ├── rtl/                      # 검증 대상(DUT)
-│   │   │   ├── SPI_v1_0.v            # IP Top (AXI Slave wrapper)
-│   │   │   ├── SPI_v1_0_S00_AXI.v    # AXI4-Lite Slave + Register Map + user logic
-│   │   │   └── spi_master.sv         # SPI Master FSM
-│   │   ├── tb/                       # UVM 컴포넌트
-│   │   ├── filelist.f
-│   │   └── Makefile
-│   ├── MicroBlaze_SPI/                              # SPI Master 보드 Vivado/Vitis 프로젝트
-│   │   ├── 260430_MicroBlaze_SPI.srcs/               # Vivado 소스 (constraint 등)
-│   │   │   └── constrs_1/imports/OnDeviceAI/Basys-3-Master.xdc
-│   │   └── vitis_workspace/MicroBlaze_SPI_Master/src/   # MicroBlaze 펌웨어 (Layered Architecture)
-│   │       ├── ap/                   # Application  : SpiApp, interrupt
-│   │       ├── driver/               # Driver       : FND, Button
-│   │       ├── HAL/                  # HAL          : SPI, GPIO, TMR
-│   │       └── common/
-│   ├── MicroBlaze_I2C/                              # I2C 보드 Vivado/Vitis 프로젝트
-│   │   ├── 260430_MicroBlaze_I2C.srcs/
-│   │   │   └── constrs_1/imports/OnDeviceAI/Basys-3-Master.xdc
-│   │   └── vitis_workspace/MicroBlaze_I2C/src/          # I2CApp 기반 펌웨어 (ap/driver/HAL/common)
-│   └── ip_repo/                      # Vivado Custom IP 패키징
-│       ├── SPI_1.0/hdl/              # SPI_v1_0.v, SPI_v1_0_S00_AXI.v, spi_master.sv
-│       ├── I2C_1.0/hdl/              # I2C_v1_0.v, I2C_v1_0_S00_AXI.v, i2c_master.sv
-│       └── GPIO_1.0, GPIO8_1.0, TMR_1.0, uart_1.0, myip_1.0/  # 기타 Custom IP
+├── AXI_SPI_UVM_Verification/         # SPI Peripheral UVM 검증 환경
+│   ├── rtl/                          # 검증 대상(DUT)
+│   │   ├── SPI_v1_0.v                # IP Top (AXI Slave wrapper)
+│   │   ├── SPI_v1_0_S00_AXI.v        # AXI4-Lite Slave + Register Map + user logic
+│   │   └── spi_master.sv             # SPI Master FSM
+│   ├── tb/                           # UVM 컴포넌트
+│   ├── filelist.f
+│   └── Makefile
+├── MicroBlaze_SPI/                   # SPI Master 보드 Vivado/Vitis 프로젝트
+│   ├── 260430_MicroBlaze_SPI.srcs/   # Vivado 소스 (constraint 등)
+│   │   └── constrs_1/imports/OnDeviceAI/Basys-3-Master.xdc
+│   └── vitis_workspace/MicroBlaze_SPI_Master/src/   # MicroBlaze 펌웨어 (Layered Architecture)
+│       ├── ap/                       # Application  : SpiApp, interrupt
+│       ├── driver/                   # Driver       : FND, Button
+│       ├── HAL/                      # HAL          : SPI, GPIO, TMR
+│       └── common/
+├── MicroBlaze_I2C/                   # I2C 보드 Vivado/Vitis 프로젝트
+│   ├── 260430_MicroBlaze_I2C.srcs/
+│   │   └── constrs_1/imports/OnDeviceAI/Basys-3-Master.xdc
+│   └── vitis_workspace/MicroBlaze_I2C/src/          # I2CApp 기반 펌웨어 (ap/driver/HAL/common)
+├── ip_repo/                          # Vivado Custom IP 패키징
+│   ├── SPI_1.0/hdl/                  # SPI_v1_0.v, SPI_v1_0_S00_AXI.v, spi_master.sv
+│   ├── I2C_1.0/hdl/                  # I2C_v1_0.v, I2C_v1_0_S00_AXI.v, i2c_master.sv
+│   └── GPIO_1.0, GPIO8_1.0, TMR_1.0, uart_1.0, myip_1.0/  # 기타 Custom IP
 └── docs/                             # 블록도 및 검증 결과 이미지
 ```
 
@@ -294,7 +293,7 @@ Read-Only 레지스터에 대한 write는 발생할 수 없으므로 `ignore_bin
 ### RTL 시뮬레이션 (VCS + Verdi)
 
 ```bash
-cd src/AXI_SPI_UVM_Verification
+cd AXI_SPI_UVM_Verification
 
 make sim                            # 컴파일 + 시뮬레이션
 make sim TC=axi_spi_test SEED=1234  # 테스트/시드 지정
@@ -307,9 +306,9 @@ Makefile에는 `line + cond + fsm + tgl + branch + assert` 커버리지 옵션�
 
 ### FPGA 구현
 
-1. Vivado에서 `src/ip_repo/{SPI_1.0, I2C_1.0}/hdl` 소스로 Custom IP 패키징
+1. Vivado에서 `ip_repo/{SPI_1.0, I2C_1.0}/hdl` 소스로 Custom IP 패키징
 2. Block Design에 MicroBlaze + Custom IP + GPIO + TMR 연결 후 bitstream 생성
-3. Vitis에서 `src/MicroBlaze_SPI/vitis_workspace`, `src/MicroBlaze_I2C/vitis_workspace` 임포트 후 두 보드에 각각 Master / Slave 다운로드
+3. Vitis에서 `MicroBlaze_SPI/vitis_workspace`, `MicroBlaze_I2C/vitis_workspace` 임포트 후 두 보드에 각각 Master / Slave 다운로드
 
 ---
 
