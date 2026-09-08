@@ -17,8 +17,9 @@ MicroBlaze 기반 SoC에 통합하여 **FPGA 보드 간 통신**을 구현한 �
 
 ## 1. 프로젝트 개요
 
-Xilinx가 제공하는 IP를 가져다 쓰는 대신, **AXI4-Lite Slave 인터페이스를 직접 RTL로 구현**하여
-SPI·I2C Master를 Custom Peripheral IP로 만들고 MicroBlaze에 연결했습니다.
+**SPI·I2C Master를 프로토콜 FSM으로 직접 설계**하고, AXI4-Lite Slave 뒤에 붙여
+Custom Peripheral IP로 만든 뒤 MicroBlaze에 연결했습니다.
+AXI 인터페이스와 프로토콜 로직을 분리해, 같은 Slave 구조 위에 두 프로토콜을 각각 얹었습니다.
 
 동작 확인은 실제 하드웨어에서 수행했습니다.
 FPGA 한 대에 **Master IP**를, 다른 한 대에 **RTL로 설계한 Slave 모듈**을 올려
@@ -113,7 +114,9 @@ AXI Interconnect에 연결해 SoC를 구성했습니다.
 
 ### 4.1 AXI4-Lite Slave
 
-AW / W / B / AR / R 5개 채널을 VALID–READY 핸드셰이크로 구현했습니다.
+SoC에 통합한 Slave는 Vivado AXI4-Lite Peripheral 템플릿(`SPI_v1_0_S00_AXI`)의 채널 로직을 두고,
+레지스터 맵과 사용자 로직 영역을 SPI·I2C에 맞게 작성한 것입니다.
+AW / W / B / AR / R 5개 채널은 VALID–READY 핸드셰이크로 동작합니다.
 
 - 32-bit 데이터 폭, 4개 레지스터 (word 단위 정렬)
 - **Write**: `awready`·`wready`가 모두 assert된 시점에 레지스터 갱신 → `bvalid`로 OKAY 응답
